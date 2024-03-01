@@ -5,17 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="h1">Simple Weather App</h1>
-    </header>
-    <main class="main">
-        <form action="" id="form"><input type="number" name="zip" id="" placeholder="Get forecast by ZIP code"><button
-                type="submit">Search by ZIP</button></form>
-        <div class="forecast-display"></div>
-    </main>
+    <div class="flex-box">
+        <header class="header">
+            <h1 class="h1">Simple Weather App</h1>
+        </header>
+        <form id="form"><label>
+                <input type="text" name="zip" id="zip" placeholder="Get forecast by ZIP code"></label>
+
+            <button type="submit">Search ZIP</button>
+        </form>
+        <main class="main">
+
+            <div class="forecast-display"></div>
+        </main>
+    </div>
+
     <script src="script.js">
     </script>
 </body>
