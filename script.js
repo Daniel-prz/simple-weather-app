@@ -9,8 +9,8 @@ class Weather {
     this.averageTemp = weatherDay.temp;
     this.description = weatherDay.weather.description;
     this.icon = weatherDay.weather.icon;
-    this.high = weatherDay.high_temp;
-    this.low = weatherDay.low_temp;
+    this.high = weatherDay.max_temp;
+    this.low = weatherDay.min_temp;
   }
 
   displayForecast(weatherData) {
@@ -18,9 +18,9 @@ class Weather {
     forecastContainer.innerHTML += `<div>
     <h3 class="date">Date - ${weatherData.date}</h3>
     <h4 class="city">City - ${weatherData.city}</h4>
-    <div class="weather-row"><span>${weatherData.averageTemp}</span>
-    <span>${weatherData.high}</span>
-    <span>${weatherData.low}</span>
+    <div class="weather-row"><span class="temp">${weatherData.averageTemp}°</span>
+    <span class="high-temp">H-${weatherData.high}°</span>
+    <span class="low-temp">L-${weatherData.low}°</span>
     <img class="weather-icon" src="https://cdn.weatherbit.io/static/img/icons/${weatherData.icon}.png"
      alt="weather icon" >
     <span>${weatherData.description}</span>

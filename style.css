@@ -11,8 +11,7 @@ form {
 }
 
 img {
-  height: 50px;
-  width: 50px;
+  width: 45px;
 }
 
 .forecast-display {
@@ -26,4 +25,18 @@ img {
   border-radius: 8px;
   width: 500px;
   height: 1100px;
+}
+.weather-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.temp {
+  font-size: 1.2rem;
+}
+
+.low-temp,
+.high-temp {
+  color: rgb(61, 66, 77);
 }
